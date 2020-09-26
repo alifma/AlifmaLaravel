@@ -20,13 +20,13 @@
             @foreach ($mahasiswa as $m)
             <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
-                <td>{{ $m->NIM }}</td>
+                <td>{{ $m->nim }}</td>
                 <td>{{ $m->nama }}</td>
                 <td>{{ $m->email }}</td>
                 <td>{{ $m->jurusan }}</td>
                 <td>
-                    <a href="" class="badge bg-success">Edit</a>
-                    <a href="" class="badge bg-danger">Delete</a>
+                    <a href=""><span class="bg-success badge">Edit</span></a>
+                    <a href=""><span class="bg-danger badge">Delete</span></a>
                 </td>
             </tr>
             @endforeach

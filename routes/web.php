@@ -16,8 +16,8 @@ use App\Http\Controllers\PagesController;
 */
 
 // Root
-// Route::get('/', function () {
-//     return view('index');
+// Route::get('/coba', function () {
+//     return view('coba');
 // });
 
 // Route::get('/about', function () {
