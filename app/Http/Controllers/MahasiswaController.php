@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Mahasiswa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Student;
 
 class MahasiswaController extends Controller
 {
@@ -15,8 +15,9 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
+        // Kalau panggil dengan Query Builder
         // $mahasiswa = DB::table('students')->get();
-        $mahasiswa = Student::all();
+        $mahasiswa = Mahasiswa::all();
         $data = [
             'mahasiswa' => $mahasiswa
         ];

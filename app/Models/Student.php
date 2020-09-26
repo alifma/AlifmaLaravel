@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    // Kalau misalkan nama taelnya gak default, tambahin manual aja
-    // protected $table = 'nama_tabel';
-    // protected $primaryKey = 'nama_primary';
-
-
+    use HasFactory;
+    protected $fillable = ['nama', 'nim', 'email', 'jurusan'];
 }
